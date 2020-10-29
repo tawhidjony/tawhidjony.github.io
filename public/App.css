@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background: #f1f5f8;
+}
+
+.index-page {
+  width: 100vw;
+  height: 100vh;
+}
+.index-page::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  display: inline-block;
+  width: 50rem;
+  height: 50rem;
+  background: url("images/top2.svg") top/50rem no-repeat;
+}
+.index-page::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 50rem;
+  height: 50rem;
+  background: url("images/bottom.svg") bottom/50rem no-repeat;
+}
+.index-page .profile-img-area {
+  position: relative;
+  top: 12rem;
+  left: 32rem;
+  border: 0.5rem solid #ff0057;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+}
+.index-page .profile-img-area img {
+  border: 0.5rem solid #fff;
+  width: 100% !important;
+  border-radius: 100%;
+  background-color: #fff;
+}
+.index-page .title-typographi {
+  margin-top: -5rem;
+}
+.index-page .title-typographi h1 {
+  font-size: 4rem;
+}
+.index-page .title-typographi h2 {
+  font-size: 3rem;
+}
+.index-page .title-typographi p {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+/* global css */
+.active {
+  color: #ff0057 !important;
+  font-weight: 600 !important;
+}
+
+.single-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  height: 40rem;
+  max-height: 40rem;
+}
+
+/* About page */
