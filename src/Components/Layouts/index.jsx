@@ -1,16 +1,20 @@
 import React from 'react'
+import { FiMenu } from 'react-icons/fi'
 import { Link, useLocation } from 'react-router-dom'
 
 const Layouts = ({ children }) => {
     const { pathname } = useLocation()
     return (<>
-        <header className='bg-white h-[70px] shadow drop-shadow-lg flex'>
-            <div className='basis-[20%]'>
-                <div className='flex h-[70px] items-center'>
-                    <span className='px-6 text-3xl font-extralight'>Tawhidjony</span>
+
+
+        <header className='bg-white md:h-[70px] h-14 shadow drop-shadow-lg flex'>
+            <div className='md:basis-[20%]'>
+                <div className='flex md:h-[70px] h-14 items-center space-x-4 mx-2'>
+                    <span className='md:hidden md:px-6 md:text-3xl md:font-extralight'><FiMenu size={20} className="text-green-600" /></span>
+                    <span className='md:px-6 md:text-3xl md:font-extralight text-base font-black'>Tawhidjony</span>
                 </div>
             </div>
-            <div className='basis-[85%] '>
+            <div className='basis-[85%] hidden md:block'>
                 <ul className='flex justify-end items-center px-4 h-full space-x-6 uppercase font-medium'>
                     {[
                         { name: 'Home', path: '/' },
@@ -25,6 +29,8 @@ const Layouts = ({ children }) => {
             </div>
 
         </header>
+
+
         <div className='relative bg-slate-100 h-[calc(100vh-70px)]'>{children}</div>
     </>)
 }
