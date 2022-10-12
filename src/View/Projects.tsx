@@ -1,9 +1,12 @@
+import Layout from "../Components/Layout"
 
 type Props = {}
 
 const Projects = (props: Props) => {
   return (
-    <div>Projects</div>
+    <Layout>
+
+    </Layout>
   )
 }
 

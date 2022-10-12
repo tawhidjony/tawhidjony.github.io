@@ -1,9 +1,12 @@
+import Layout from "../Components/Layout"
 
 type Props = {}
 
 const Resume = (props: Props) => {
   return (
-    <div>Resume</div>
+    <Layout>
+
+    </Layout>
   )
 }
 

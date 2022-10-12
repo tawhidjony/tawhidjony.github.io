@@ -1,9 +1,12 @@
+import Layout from "../Components/Layout"
 
 type Props = {}
 
 const Contact = (props: Props) => {
   return (
-    <div>Contact</div>
+    <Layout>
+
+    </Layout>
   )
 }
 

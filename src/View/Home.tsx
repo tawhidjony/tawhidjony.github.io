@@ -1,53 +1,23 @@
-import { Link, useLocation } from 'react-router-dom';
+import Layout from '../Components/Layout';
 
 const Home = () => {
-  const { pathname } = useLocation()
-  console.log(pathname);
-  
-  let navMenu = [
-    {
-      id:1,
-      path:"/",
-      label:"Home"
-    },
-    {
-      id:2,
-      path:"/project",
-      label:"Projects"
-    },
-    {
-      id:3,
-      path:"/about",
-      label:"About"
-    },
-    {
-      id:4,
-      path:"/contact",
-      label:"Contact"
-    },
-    {
-      id:5,
-      path:"/resume",
-      label:"Resume"
-    }
-  ]
   return (
-    <nav>
-      <div className='bg-slate-700 h-14 flex justify-between items-center px-8' >
-        <div>
-          <Link to={"/"} >
-            <h2 className='rounded-full border border-pink-500 text-white w-10 h-10 flex justify-center items-center text-lg font-black' >TJ</h2>
-          </Link>
+    <Layout>
+        <div className="container mx-auto relative h-full">
+          <div className='absolute h-[400px] w-[400px] rounded-full shadow-lg opacity-20 top-2/4 left-3/4 transform -translate-x-2/4 -translate-y-2/4  bg-slate-600' >
+              <span></span>
+          </div>
+          <div className='absolute h-[400px] w-[400px]  top-2/4 left-1/4 text-white transform -translate-x-2/4 -translate-y-2/4'>
+            <div className='bg-slate-900 px-6 py-2 rounded inline-block scale-150 -rotate-12' >
+              <h1 className='text-2xl' > 👋  Hello <span className='text-base' >i am </span> </h1>
+              <h1 className='text-xl' >Tawhidur Rahman</h1>
+            </div>
+            <div className='bg-slate-900 px-4 py-2 rounded inline-block scale-150 -rotate-12 mt-10 ml-44' >
+              <h1 className='text-lg' >A Full Stack Developer </h1>
+            </div>
+          </div>
         </div>
-        <div>
-          <ul className='flex space-x-8 text-white' >
-            {navMenu.map((item) => (<>
-              <li key={`nav${item?.id}`} className={`${pathname === item.path && 'active'}  hover:active last:border last:border-pink-500  rounded px-3 py-2 `} ><Link to={item.path}>{item.label}</Link> </li>
-            </>))}
-          </ul>
-        </div>
-      </div>
-    </nav>
+    </Layout>
   )
 }
 
