@@ -1,1 +1,0 @@
-import{o as t,w as e}from"./chunk-QMGIS6GS-DFW9DN82.js";function o(){return t.jsx("main",{className:"flex items-center justify-center pt-16 pb-4",children:"about"})}function u({}){return[{title:"New React Router App"},{name:"description",content:"Welcome to React Router!"}]}const a=e(function(){return t.jsx(o,{})});export{a as default,u as meta};

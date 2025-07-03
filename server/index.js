@@ -102,8 +102,8 @@ const route0 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   default: root,
   links
 }, Symbol.toStringTag, { value: "Module" }));
-const logoDark = "/assets/logo-dark-pX2395Y0.svg";
-const logoLight = "/assets/logo-light-CVbx2LBR.svg";
+const logoDark = "/tawhidjony.github.io/assets/logo-dark-pX2395Y0.svg";
+const logoLight = "/tawhidjony.github.io/assets/logo-light-CVbx2LBR.svg";
 function Welcome() {
   return /* @__PURE__ */ jsx("main", { className: "flex items-center justify-center pt-16 pb-4", children: /* @__PURE__ */ jsxs("div", { className: "flex-1 flex flex-col items-center gap-16 min-h-0", children: [
     /* @__PURE__ */ jsx("header", { className: "flex flex-col items-center gap-9", children: /* @__PURE__ */ jsxs("div", { className: "w-[500px] max-w-[100vw] p-4", children: [
@@ -209,7 +209,10 @@ const route1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   meta: meta$1
 }, Symbol.toStringTag, { value: "Module" }));
 function AboutPage() {
-  return /* @__PURE__ */ jsx("main", { className: "flex items-center justify-center pt-16 pb-4", children: "about" });
+  return /* @__PURE__ */ jsxs("main", { className: "flex items-center justify-center pt-16 pb-4", children: [
+    "about of new routes",
+    /* @__PURE__ */ jsx(Link, { to: "/", children: "Home" })
+  ] });
 }
 function meta({}) {
   return [{
@@ -227,7 +230,7 @@ const route2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   default: about,
   meta
 }, Symbol.toStringTag, { value: "Module" }));
-const serverManifest = { "entry": { "module": "/assets/entry.client-BMY5Vmw3.js", "imports": ["/assets/chunk-QMGIS6GS-DFW9DN82.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": true, "module": "/assets/root-B3GpB7RI.js", "imports": ["/assets/chunk-QMGIS6GS-DFW9DN82.js"], "css": ["/assets/root-QLPvu8kQ.css"], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/home": { "id": "routes/home", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "/assets/home-cso_TTks.js", "imports": ["/assets/chunk-QMGIS6GS-DFW9DN82.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/about": { "id": "routes/about", "parentId": "root", "path": "about", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "/assets/about-BU0p0-DD.js", "imports": ["/assets/chunk-QMGIS6GS-DFW9DN82.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 } }, "url": "/assets/manifest-be7f8ddd.js", "version": "be7f8ddd", "sri": void 0 };
+const serverManifest = { "entry": { "module": "/tawhidjony.github.ioassets/entry.client-BMY5Vmw3.js", "imports": ["/tawhidjony.github.ioassets/chunk-QMGIS6GS-DFW9DN82.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": true, "module": "/tawhidjony.github.ioassets/root-DbxLOkU8.js", "imports": ["/tawhidjony.github.ioassets/chunk-QMGIS6GS-DFW9DN82.js"], "css": ["/tawhidjony.github.ioassets/root-C5i2Fy9F.css"], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/home": { "id": "routes/home", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "/tawhidjony.github.ioassets/home-ZSc6Ux1G.js", "imports": ["/tawhidjony.github.ioassets/chunk-QMGIS6GS-DFW9DN82.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/about": { "id": "routes/about", "parentId": "root", "path": "about", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "/tawhidjony.github.ioassets/about-_5cQKJbN.js", "imports": ["/tawhidjony.github.ioassets/chunk-QMGIS6GS-DFW9DN82.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 } }, "url": "/tawhidjony.github.ioassets/manifest-bddfaad5.js", "version": "bddfaad5", "sri": void 0 };
 const assetsBuildDirectory = "build/client";
 const basename = "/";
 const future = { "unstable_middleware": false, "unstable_optimizeDeps": false, "unstable_splitRouteModules": false, "unstable_subResourceIntegrity": false, "unstable_viteEnvironmentApi": false };
@@ -235,7 +238,7 @@ const ssr = true;
 const isSpaMode = false;
 const prerender = [];
 const routeDiscovery = { "mode": "lazy", "manifestPath": "/__manifest" };
-const publicPath = "/";
+const publicPath = "/tawhidjony.github.io";
 const entry = { module: entryServer };
 const routes = {
   "root": {
