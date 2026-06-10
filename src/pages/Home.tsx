@@ -67,6 +67,8 @@ interface BlogArticle {
     imageColor: string;
 }
 
+const PROFILE_IMAGE = "/images/tawhid.png";
+
 const PROJECTS: Project[] = [
     {
         id: 'invoicing-saas',
@@ -569,22 +571,8 @@ I have received your official inquiry notification. A formal PDF proposal with s
 
                                     {/* Elegant central headshot block */}
                                     <div className="relative z-10 w-36 h-36 rounded-full p-1 bg-gradient-to-tr from-blue-600 via-indigo-600 to-purple-600 shadow-xl">
-                                        <div className="w-full h-full rounded-full bg-slate-950 overflow-hidden flex items-center justify-center relative">
-
-                                            {/* Interactive headshot avatar layout */}
-                                            <svg viewBox="0 0 100 100" className="w-[85%] h-[85%] text-slate-400 fill-slate-800" stroke="currentColor" strokeWidth="1.5">
-                                                <circle cx="50" cy="40" r="20" strokeWidth="2" className="text-blue-400" />
-                                                <path d="M20,80 C20,62 34,55 50,55 C66,55 80,62 80,80" strokeWidth="2" strokeLinecap="round" className="text-indigo-400" />
-                                                <circle cx="50" cy="40" r="4" className="fill-blue-500 animate-pulse" />
-
-                                                {/* Eye-catching developer glasses */}
-                                                <path d="M38,38 L46,38 M54,38 L62,38 M46,38 Q50,42 54,38" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                                            </svg>
-
-                                            {/* Grid overlap */}
-                                            <div className="absolute inset-x-0 bottom-0 py-1 bg-slate-900/90 text-center border-t border-slate-800">
-                                                <span className="text-[10px] uppercase font-bold tracking-widest text-slate-300 mono-font">TAWHID JONY</span>
-                                            </div>
+                                        <div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center relative">
+                                            <img className="w-full h-full object-cover" src={PROFILE_IMAGE} alt="tawhidjony" />
                                         </div>
                                     </div>
 
