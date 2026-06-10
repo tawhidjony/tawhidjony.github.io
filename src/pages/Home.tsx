@@ -13,31 +13,19 @@ import {
     ArrowUpRight,
     CheckCircle2,
     MessageSquare,
-    Calendar,
     ChevronLeft,
     ChevronRight,
     Download,
 
     ExternalLink,
-    FileCode2,
-    BookOpen,
     ShieldCheck,
-    Activity,
     Workflow,
     Zap,
     Send,
-    DollarSign,
-    Briefcase,
-    MapPin,
-    User,
     Check,
     Menu,
     X,
     PhoneCall,
-    Flame,
-    Award,
-    Users,
-    Eye,
     Star
 } from 'lucide-react';
 
@@ -310,10 +298,10 @@ export default function Home() {
             setFormSuccess(true);
 
             // Auto generate a custom proposal draft based on inputs
-            const serviceWord =
-                calcService === 'saas' ? 'SaaS Web Platform' :
-                    calcService === 'admin' ? 'Interactive Admin Dashboard' :
-                        calcService === 'mobile' ? 'Flutter Mobile Application' : 'Custom Web Application';
+            // const serviceWord =
+            //     calcService === 'saas' ? 'SaaS Web Platform' :
+            //         calcService === 'admin' ? 'Interactive Admin Dashboard' :
+            //             calcService === 'mobile' ? 'Flutter Mobile Application' : 'Custom Web Application';
 
             const proposalText = `Thank you, ${formData.name}! An automated, preliminary roadmap draft has been generated for ${formData.company || 'your project'}:
 
