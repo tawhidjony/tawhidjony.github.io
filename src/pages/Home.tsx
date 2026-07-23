@@ -375,33 +375,6 @@ I have received your official inquiry notification. A formal PDF proposal with s
         return grid;
     };
 
-    const [fetchData, setFetchData] = useState([])
-
-    async function getUserData() {
-        try {
-            const response = await fetch('https://jsonplaceholder.typicode.com/users');
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            const data = await response.json();
-            return data
-        } catch (error) {
-            console.error('Fetch failed:', error);
-        }
-    }
-
-    useEffect(() => {
-        const fetchData = async () => {
-            const data = await getUserData();
-            setFetchData(data)
-        };
-        fetchData();
-    }, []);
-
-    console.log("fetchData=======", fetchData);
-    
-
-
     return (
         <div className="min-h-screen bg-[#0F172A] text-[#F8FAFC] overflow-x-hidden selection:bg-blue-600 selection:text-white">
 
@@ -503,16 +476,6 @@ I have received your official inquiry notification. A formal PDF proposal with s
                     </div>
                 )}
             </header>
-
-            <div className='pt-8 pb-16 md:pt-16 md:pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-                <ul className='space-y-4'>
-                    {fetchData?.map((item:any, index)=> {
-                        return (
-                            <li key={index} className='border rounded px-2 py-1 border-gray-600'>{item?.name}</li>
-                        )
-                    })}
-                </ul>
-            </div>
 
             {/* --- HERO SECTION --- */}
             <section id="hero" className="relative pt-8 pb-16 md:pt-16 md:pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
