@@ -506,7 +506,7 @@ I have received your official inquiry notification. A formal PDF proposal with s
 
             <div className='pt-8 pb-16 md:pt-16 md:pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                 <ul className='space-y-4'>
-                    {fetchData?.map((item, index)=> {
+                    {fetchData?.map((item:any, index)=> {
                         return (
                             <li key={index} className='border rounded px-2 py-1 border-gray-600'>{item?.name}</li>
                         )
